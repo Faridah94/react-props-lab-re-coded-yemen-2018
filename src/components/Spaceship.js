@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 
-class Spaceship extends React.Component {
+export default class Spaceship extends React.Component {
   render() {
     return (
       <div className="Spaceship">
@@ -18,11 +18,13 @@ class Spaceship extends React.Component {
 
 
 Spaceship.defaultProps = {
-  name: 'Falcon9',
-  speed :'slow',
-  hasRockets:'false',
-  colors:['black', 'red']
+  speed : slow,
+  hasRockets: false,
+  colors:{['black', 'red']}
 };
 
 ReactDOM.render(
-  <Spaceship />,  document.getElementById('root'));
+  <Spaceship
+  name="Falcon9"
+  />,
+  document.getElementById('root'));
